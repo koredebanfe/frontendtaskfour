@@ -3,7 +3,7 @@
   
   function convertFahrToCelsius(n) {
     let value = Number(n);
-    let convertToCelsius = ((value - 32) * 5 / 9).toFixed(4);
+    let convertToCelsius = +((value - 32) * 5 / 9).toFixed(4);
        
  
    if (typeof n === "boolean" || n === "") {
@@ -23,13 +23,7 @@
   console.log(convertFahrToCelsius([1,2,3]));
   console.log(convertFahrToCelsius({temp : 0}));
   console.log(convertFahrToCelsius('10'));
-  console.log(convertFahrToCelsius('10n'));
-  console.log(convertFahrToCelsius(false));
-console.log(convertFahrToCelsius("0"));
-console.log(convertFahrToCelsius("-12"));
-console.log(convertFahrToCelsius(""));
-console.log(convertFahrToCelsius([]));
-console.log(convertFahrToCelsius(undefined))
+  
 
 
 
@@ -88,14 +82,6 @@ console.log(convertFahrToCelsius(undefined))
    console.log(checkYuGiOh(30));
    console.log(checkYuGiOh(5));
    console.log(checkYuGiOh("50"));
-   console.log(checkYuGiOh({}));
-  console.log(checkYuGiOh([]));
   console.log(checkYuGiOh("fizzbuzz is meh"));
-   console.log(checkYuGiOh(true));
-   console.log(checkYuGiOh(false));
-   console.log(checkYuGiOh(NaN));
-   console.log(checkYuGiOh('Korex'));
-    console.log(checkYuGiOh(undefined));
-  console.log(checkYuGiOh(""));
   console.log(checkYuGiOh("10"))
    
