@@ -38,13 +38,13 @@
      }
    
      if(isNaN(n)) {
-       return `invalid paramenter: ${JSON.stringify(n)}`;
+       return `invalid parameter: ${JSON.stringify(n)}`;
      } else if (typeof n === "boolean" || Array.isArray(n) ){
-        return `invalid paramenter: ${JSON.stringify(n)}`;
+        return `invalid parameter: ${JSON.stringify(n)}`;
      } else if (n === "" || n === NaN) {
         return `invalid paramenter: ${JSON.stringify(n)}`;
      } else if(typeof(n) === "object") {
-         return `invalid paramenter: ${JSON.stringify(n)}`;
+         return `invalid parameter: ${JSON.stringify(n)}`;
      }
    
       return arrayContainingNnumbers;
